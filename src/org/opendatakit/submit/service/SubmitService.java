@@ -69,6 +69,7 @@ public class SubmitService extends Service {
 		
 		// Set up private vars
 		mCommManager = new CommunicationManager(this);
+		mCommManager = new CommunicationManager(getApplicationContext());
 		mFilter = new IntentFilter();
 		mSubApi = new SubmitAPI();
         
